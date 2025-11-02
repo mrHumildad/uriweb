@@ -11,7 +11,7 @@ const Home = ({setCurrentPage}) => {
     <div className="Home">
       <header className="hero" style={{ backgroundImage: `url(${hero})` }}>
         <div className="social-top">
-        <FontAwesomeIcon icon={faSquareFacebook} style={{color:'#3026ebff', boxShadow: '0 4px 12px rgba(255, 255, 255, 1)'}}/>
+        <FontAwesomeIcon icon={faSquareFacebook} />
         <FontAwesomeIcon icon={faSquareXTwitter} />
         <FontAwesomeIcon icon={faSquareInstagram} />
       </div>
@@ -32,10 +32,10 @@ const Home = ({setCurrentPage}) => {
         </section>
 
         <section className='personajes'>
-          <div className="personaje" onClick={() => setCurrentPage('Super')} id="super"></div>
-          <div className="personaje" id="magicus"></div>
-          <div className="personaje" id="improvistos"></div>
-          <div className="personaje" id="nadal"></div>
+          <div className="personaje" onClick={() => setCurrentPage('Super')} id="superLink"></div>
+          <div className="personaje" id="magicusLink"></div>
+          <div className="personaje" id="improvistosLink"></div>
+          <div className="personaje" id="nadalLink"></div>
         </section>
 
         <section className='bottom'>

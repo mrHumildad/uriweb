@@ -26,7 +26,7 @@
   transition: transform 0.2s ease;
 }
 .char-logo:hover{
-  transform: scale(1.1);  
+  transform: rotate(-5deg) scale(1.1);  
 }
 
 .char-main{
@@ -58,6 +58,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  font-size: 5vh;
   
 }
 .char-subtitle{
@@ -115,13 +116,3 @@
   justify-content: space-evenly;
 }
 
-/* md screen */
-@media (min-width: 768px) {
-    .swiper-button-prev {
-        transform: translate(-200px);
-    }
-
-    .swiper-button-next {
-        transform: translate(200px);
-    }
-}
