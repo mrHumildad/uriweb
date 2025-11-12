@@ -84,10 +84,10 @@ const Home = () => {
           </div>
 
           <div className="pers-container">
-            <div style={{ backgroundImage: `url(${improCover})` }}className="personaje" onClick={() => navigate('/impro')} id="improvistosLink">
-              <h4 className="personaje-title desktop improvistosLink-title">IMPROVISTOS</h4>
+            <div style={{ backgroundImage: `url(${improCover})` }}className="personaje" onClick={() => navigate('/impro')} id="improLink">
+              <h4 className="personaje-title desktop improLink-title">IMPROVISTOS</h4>
             </div>
-            <h4 className="personaje-title-mobile mobile improvistosLink-title">IMPROVISTOS</h4>
+            <h4 className="personaje-title-mobile mobile improLink-title">IMPROVISTOS</h4>
           </div>
 
           <div className="pers-container">

@@ -1,13 +1,9 @@
-:root{
-  --super-font: 'Bangers', cursive;
-  --magicus-font: 'Bigelow Rules', cursive;
 
-}
 .char-page{
   width: 100%;
   height: auto;
   overflow: hidden;
-  
+  min-height: 100dvh;
 }
 #super-page {
   background: linear-gradient(115deg,rgb(177, 171, 128) 0%, rgba(253, 187, 45, 1) 100%);;
@@ -62,6 +58,22 @@
   transform: translate(-50%, -50%);
   text-align: center;
 }
+#super-title{
+  color: var(--dark-yellow);
+  font-family: var(--super-font);
+}
+#nadal-title{
+  color: var(--red);
+  font-family: var(--nadal-font);
+}
+#impro-title{
+  color: var(--dark-yellow);
+  font-family: var(--impro-font);
+}
+#magicus-title{
+  color: var(--dark-yellow);
+  font-family: var(--magicus-font);
+}
 
 .char-logo:hover{
   transform: rotate(-5deg) scale(1.1);  
@@ -115,7 +127,8 @@
 }
 .char-fotos {
     width: 40%;
-    height: 70vh;
+    height: 50vh;
+    align-self: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
