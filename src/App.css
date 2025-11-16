@@ -105,6 +105,7 @@ h1 {
     margin-inline-end: 0px;
     font-weight: bold;
     unicode-bidi: isolate;
+
 }
 h3 {
     display: block;
@@ -274,6 +275,7 @@ p {
   padding:0 1rem;
   display: flex;
   flex-direction: column;
+  gap: 3dvh;
   align-items: center;
   margin: auto;
 }
@@ -321,8 +323,8 @@ p {
 .personaje {
   width: 22dvw;
   height: 22dvw;
-  max-width: 25dvh;
-  max-height: 25dvh;
+  max-width: min(30dvh, 30dvw);
+  max-height: min(30dvh, 30dvw);
   border-radius: 50%;
   background-size: cover;
   background-position: center;
@@ -335,19 +337,19 @@ p {
 }
 
 #superLink {
-  border: 0.3dvw solid var(--red);
+  border: 0.5dvw solid var(--red);
 }
 
 #magicusLink {
-  border: 0.3dvw solid var(--blue);
+  border: 0.5dvw solid var(--blue);
 }
 
 #improvistosLink {
-  border: 0.3dvw solid var(--orange);
+  border: 0.5dvw solid var(--orange);
 }
 
 #nadalLink {
-  border: 0.3dvw solid var(--green);
+  border: 0.5dvw solid var(--green);
 }
 
 .personaje:hover {
@@ -372,7 +374,10 @@ p {
 }
 
 .personaje-title {
-  font-size: 6dvw;
+  font-size: 5dvw;
+  text-align: center;
+  text-shadow: -1px 0 var(--white), 0 1px var(--white), 1px 0 var(--white), 0 -1px var(--white);
+
   position: absolute;
   bottom: 0.5rem;
   left: 50%;

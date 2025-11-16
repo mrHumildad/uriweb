@@ -22,28 +22,27 @@ const Super = () => {
         <img src={logo} alt="Mon Circ" className="char-logo" onClick={()=>navigate('/')}/>
         <h1 id="super-title" className="char-title">SUPER SPAGUETI</h1>
         {/* <img className="char-img-left" src={headPic2} alt="" /> */}
-        <img className="char-img-right desktop" src={headPic1} alt="" />
+        <img className="char-img-right" src={headPic2} alt="" />
       </div>
       <h3 className="char-subtitle">
-            Un superheroi del circ… amb molta salsa!
-          </h3>
+        El superheroi del circ… més inesperat de tots... Què passaria si un pallasso es convertís en superheroi?
+      </h3>
       <div className="char-main">
         <div className="char-fotos desktop">
           <SwiperComponent pics={images}/>
         </div>
         <div className="char-info">
-          
           <p className="char-text">
-            Un espectacle ple d’energia on el circ es barreja amb l’humor més absurd per donar vida a un personatge tan sorprenent com divertit. Malabars impossibles, situacions còmiques i una interacció constant amb el públic converteixen cada funció en una experiència única i inoblidable.
+            Super Spagueti és un espectacle d’energia explosiva on el circ familiar es fusiona amb l’humor absurd per donar vida a un personatge tan sorprenent com entranyable. Malabars impossibles, situacions còmiques i una interacció constant amb el públic converteixen cada funció en una experiència única i inoblidable.
           </p>
           <div className="char-fotos mobile">
           <SwiperComponent pics={images}/>
-        </div>
+          </div>
           <p className="char-text">
-            El protagonista és un superheroi ben peculiar: no sempre tot li surt com voldria, però la seva imaginació i la seva capacitat de riure’s de si mateix el transformen en un heroi proper, tendre i carregat de comicitat. El públic, grans i petits, es converteix en còmplice i company de viatge, participant activament en el desenvolupament de l’espectacle.
+            El protagonista és un superheroi molt particular: res no li surt com voldria, però la seva creativitat, el seu esperit juganer i la seva capacitat de riure’s de si mateix el transformen en un heroi proper i divertidíssim. El públic —grans i petits— es converteix en còmplice i part essencial de la funció, participant activament en cada moment.
           </p>
           <p className="char-text">
-            Un format fresc i participatiu, ideal per a programacions familiars, escoles i espais oberts, que garanteix rialles, emoció i un record ple de màgia i diversió…
+            Un espectacle fresc, visual i participatiu, ideal per a programacions familiars, escoles, festes populars i espais oberts. Diversió garantida, emoció i molta màgia en un format pensat per deixar un record inesborrable.
           </p>
         </div>
       </div>

@@ -21,26 +21,27 @@ const Impro = () => {
       <div className="char-header" id ="impro-header">
         <img src={logo} alt="Mon Circ" className="char-logo" onClick={()=>navigate('/')}/>
 
-        <h1 id="impro-title" className="char-title">IMPROVISTOS</h1>
+        <h1 id="impro-title" className="char-title">IMPRO&#8203;VISTOS</h1>
         {/* <img className="char-img-left" src={headPic2} alt="" /> */}
         <img className="char-img-right" src={headPic1} alt="" />
       </div>
       <h3 className="char-subtitle">
-        Clown itinerant per carrers i festes
+        Clown itinerant per carrers i festes... Un reguitzell de personatges insòlits
       </h3>
       <div className="char-main">
-        <div className="char-fotos">
+        <div className="char-fotos desktop">
           <SwiperComponent pics={images}/>
         </div>
         <div className="char-info">
-          
           <p className="char-text">
-           Personatges absurds i poètics emergeixen de sobte enmig del públic per transformar l’espai quotidià en un autèntic escenari ple de vida. Cada aparició és inesperada: accions breus, gags improvisats i molt d’humor visual que connecta directament amb l’espectador, creant moments màgics i sorprenents
+           Clowns itinerants apareixen de manera inesperada enmig del públic, convertint l’espai quotidià en un escenari ple de vida, humor i sorpresa. Personatges absurds i poètics donen pas a accions breus, gags improvisats i molt d’humor visual que connecta directament amb cada espectador, creant moments màgics i irrepetibles.
           </p>
+          <div className="char-fotos mobile">
+            <SwiperComponent pics={images}/>
+          </div>
           <p className="char-text">
-            Aquest format és proper, dinàmic i adaptable a qualsevol context, ideal per donar color i alegria a fires, mercats, festes majors, cercaviles i esdeveniments de carrer. Allà on apareixen, aquests personatges deixen una estela de rialles, poesia i complicitat.
+            Aquest format és proper, dinàmic i totalment adaptable, ideal per animar fires, mercats, festes majors, cercaviles i qualsevol esdeveniment de carrer. Allà on arriben, aquests personatges porten color, alegria i complicitat, deixant una estela de rialles i petites escenes de poesia urbana.
           </p>
-          
         </div>
       </div>
 

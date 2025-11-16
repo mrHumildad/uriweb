@@ -20,29 +20,35 @@ const Magicus = () => {
     <div className='char-page' id='magicus-page'>
       <div className="char-header" id ="magicus-header">
         <img src={logo} alt="Mon Circ" className="char-logo" onClick={()=>navigate('/')}/>
-        <h1 id="magicus-title" className="char-title">MAGIC</h1>
+        <h1 id="magicus-title" className="char-title">MON MÀGIA</h1>
         {/* <img className="char-img-left" src={headPic2} alt="" /> */}
         <img className="char-img-right" src={headPic1} alt="" />
       </div>
       <h3 className="char-subtitle">
-            Un superheroi del circ… amb molta salsa!
+        Trucs que no surten, trucs que surten al revés i trucs que, de vegades, sí que surten…
       </h3>
       <div className="char-main">
-        <div className="char-fotos">
-          <SwiperComponent pics={images}/>
+        <div className="char-fotos desktop">
+          <SwiperComponent pics={images} />
         </div>
         <div className="char-info">
-          
           <p className="char-text">
-            Trucs que no surten, trucs que surten al revés i trucs que, de vegades, sí que surten… Quan res passa com estava previst, la màgia es transforma en un joc inesperat on la sorpresa i les rialles són les protagonistes.          </p>
-          <p className="char-text">
-            Aquest és un espectacle de màgia còmica i visual que juga amb els errors per convertir-los en moments únics, plens d’humor i complicitat amb el públic. Cada situació, per més absurda que sembli, es converteix en una oportunitat per fer riure i sorprendre grans i petits.
+            Quan res passa com estava previst, la màgia es converteix en un joc inesperat on la sorpresa i les rialles són les autèntiques protagonistes.
           </p>
           <p className="char-text">
-            La participació del públic és clau: nens, nenes i adults s’endinsen dins la història i en formen part activa, fent que cada funció sigui diferent i irrepetible.
+            Aquest espectacle de màgia còmica i visual transforma els errors en moments únics, plens d’humor i complicitat amb el públic. Cada situació, per més absurda que sembli, esdevé una oportunitat per sorprendre i fer riure grans i petits.
+          </p>
+          <div className="char-fotos mobile">
+            <SwiperComponent pics={images}/>
+          </div>
+          <p className="char-text">
+            Nens, nenes i adults s’endinsen en la història i en formen part activa, fent que cada funció sigui diferent i irrepetible.
           </p>
           <p className="char-text">
-            Amb un format proper, fresc i divertit, aquest espectacle és ideal per a biblioteques, escoles, festes escolars i activitats familiars, garantint rialles, il·lusió i un record inesborrable per a tothom..
+            Nens, nenes i adults s’endinsen en la història i en formen part activa, fent que cada funció sigui diferent i irrepetible.
+          </p>
+          <p className="char-text">
+            Amb un format proper, fresc i divertit, és una proposta ideal per a biblioteques, escoles, festes escolars i activitats familiars. Una experiència plena de rialles, il·lusió i records inesborrables per a tothom.
           </p>
         </div>
       </div>

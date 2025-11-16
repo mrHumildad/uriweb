@@ -2,7 +2,7 @@ import {useMemo} from 'react';
 import './char.css';
 import logo from '../assets/logo_yellow.png';
 import { useNavigate } from "react-router-dom";
-import headPic1 from '../assets/header/nadal1.png';
+import headPic1 from '../assets/header/nadal.png';
 import cabalgadaPic from '../assets/nadal/aldino.png'
 //import headPic2 from '../assets/header/nadal2.png';
 // Import images explicitly
@@ -29,34 +29,43 @@ const Nadal = () => {
         Espectacles i activitats per fer brillar l’hivern
       </h3>
       <div className="char-main">
-        <div className="char-fotos">
+        <div className="char-fotos desktop">
           <SwiperComponent pics={images}/>
         </div>
         <div className="char-info">
-          
           <p className="char-text">
-            Quan arriba el fred i les llums de Nadal omplen els carrers, Mon Circ es vesteix de festa i adapta les seves propostes per portar màgia i alegria a petits i grans.
+            Quan arriba el fred i els llums de Nadal, Mon Circ es transforma per portar màgia, humor i alegria a tots els racons. Spagueti es reinventa amb un toc festiu ple de tendresa, mentre que els personatges itinerants —absurds, poètics i sorprenents— apareixen entre parades, mercats i carrers il·luminats, convertint qualsevol espai en un escenari viu i vibrant.
+          </p>
+          <div className="char-fotos mobile">
+            <SwiperComponent pics={images}/>
+          </div>
+          <p className="char-text">
+            Els personatges itinerants es poden combinar en pack amb un espectacle de màgia còmica o amb el mateix Super Spagueti, creant una experiència completa que uneix circ familiar, màgia nadalenca i humor per a tots els públics.
           </p>
           <p className="char-text">
-            El Super Spagueti es reinventa amb un toc nadalenc ple d’humor i tendresa, mentre que els personatges itinerants —absurds, poètics i sorprenents— apareixen entre parades, mercats i llums per transformar qualsevol espai en un escenari viu.
+            Per sumar-hi encara més encant, el Pare Noel pot fer una visita especial als nens i nenes, tant la nit com el dia de Nadal, portant il·lusió, proximitat i un toc de màgia inoblidable.
           </p>
-          <p className="char-text">
-            A més, aquests imprevistos itinerants es poden combinar en pack amb un espectacle de màgia còmica o amb el propi Super Spagueti, creant una experiència completa que uneix el millor del circ, la màgia i l’humor.
-          </p>
-          <p className="char-text">
-            Per completar la màgia de les festes, el Pare Noel pot fer una visita especial als nens i nenes, ja sigui el mateix dia de Nadal o durant la Nit de Cap d’Any, portant il·lusió, complicitat i un toc d’encant extra.
-          </p>
-          
         </div>
       </div>
-      <div className="cabalgadas-cont">
-        <img className={"cabalgada-img"} src={cabalgadaPic} alt="" />
-        <p className="char-text">
-            I per a les cavalcades i cercaviles nadalenques, Mon Circ ofereix també l’espectacle itinerant Mil i una Nit, una proposta visual i festiva que converteix els carrers en un gran escenari ple de color, fantasia i diversió compartida.
-        </p>
-        <p className="char-text">
-          A l’hivern, cada racó es converteix en escenari: fires, carrers, biblioteques i escoles s’omplen de rialles, poesia i esperit festiu. Una proposta per compartir il·lusió i fer del Nadal un moment inoblidable
-        </p>
+      <h3 className="char-subtitle">
+        Espectacles i activitats per fer brillar l’hivern
+      </h3>
+      <div className="char-main">
+        <div className="char-info">
+          <p className="char-text">
+            Per a cavalcades i cercaviles nadalenques, Mon Circ ofereix també l’espectacle itinerant Mil i una Nit, amb menjafocs, xanques i una sorprenent catifa voladora: una proposta visual i festiva que omple els carrers de color, fantasia i diversió compartida.
+          </p>
+          <div className="char-fotos mobile">
+          <SwiperComponent pics={[cabalgadaPic, cabalgadaPic, cabalgadaPic]}/>
+          </div>
+          <p className="char-text">
+            A l’hivern, cada espai es converteix en escenari: fires, carrers, biblioteques i escoles s’omplen de poesia, rialles i esperit festiu. Una proposta ideal per compartir il·lusió i fer delNadal un moment absolutament inoblidable.
+          </p>
+        </div>
+        <div className="char-fotos desktop">
+          <SwiperComponent pics={[cabalgadaPic, cabalgadaPic, cabalgadaPic]}/>
+        </div>
+        
       </div>
 
     {/* <div className="data-char">
