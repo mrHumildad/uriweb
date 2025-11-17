@@ -78,16 +78,16 @@ const Home = () => {
 
           <div className="pers-container">
             <div style={{ backgroundImage: `url(${magicusCover})` }} className="personaje" onClick={() => navigate('/magicus')} id="magicusLink">
-              <h4 className="personaje-title desktop magicusLink-title">MAGICUS</h4>
+              <h4 className="personaje-title desktop magicusLink-title">MON MÀGIA</h4>
             </div>
-            <h4 className="personaje-title-mobile mobile magicusLink-title">MAGICUS</h4>
+            <h4 className="personaje-title-mobile mobile magicusLink-title">MON MÀGIA</h4>
           </div>
 
           <div className="pers-container">
             <div style={{ backgroundImage: `url(${improCover})` }}className="personaje" onClick={() => navigate('/impro')} id="improLink">
-              <h4 className="personaje-title desktop improLink-title">IMPROVISTOS</h4>
+              <h4 className="personaje-title desktop improLink-title">IMPRO&#8203;VISTOS</h4>
             </div>
-            <h4 className="personaje-title-mobile mobile improLink-title">IMPROVISTOS</h4>
+            <h4 className="personaje-title-mobile mobile improLink-title">IMPRO&#8203;VISTOS</h4>
           </div>
 
           <div className="pers-container">

@@ -25,11 +25,11 @@ const SwiperComponent = ({pics}) => {
             slidesPerView={"auto"}
             loop={true}
             coverflowEffect={{
-                rotate: 50,
-                stretch: 0,
+                rotate: 250,
+                stretch: 20,
                 depth: 100,
                 modifier: 1,
-                slideShadows: true,
+                slideShadows: false,
             }}
             autoplay={{
                 delay: 3000,
@@ -38,12 +38,12 @@ const SwiperComponent = ({pics}) => {
             /* pagination={{
                 clickable: true,
             }} */
-            navigation={true}
+            navigation={false}
             modules={[Autoplay, EffectCoverflow, Pagination, Navigation]}
             className="mySwiper">
               {pics && pics.length > 0 ? pics.map((pic, index) => (
             <SwiperSlide key={index}>
-                <img src={pic} alt={`slide ${index + 1}`} />
+                <img className="swiper-img" src={pic} alt={`slide ${index + 1}`} />
             </SwiperSlide>
         )) : ( null ) } 
             {/* <SwiperSlide>

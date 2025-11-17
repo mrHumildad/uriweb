@@ -80,11 +80,13 @@
 }
 
 .char-main{
-  height: auto;
   width: 90%;
   margin: auto;
   padding-left: 1dvw;
   display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   position: relative;
   margin-bottom: 3dvh;
 }
@@ -125,11 +127,14 @@
   font-family: var(--title-font);
   margin: auto;
   text-align: center;
-  height: 10dvh;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .char-fotos {
     width: 40%;
-    height: 50vh;
+    height: auto;
     align-self: center;
     display: flex;
     flex-direction: column;
@@ -139,28 +144,37 @@
 
 .swiper {
     width: 100%;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    height: 50vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
 }
 
 .swiper-slide {
     background-position: center;
     background-size: cover;
-    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
 }
 
 .swiper-slide img {
+    align-self: center;
     display: block;
-    height : 100%;
-    width: 100%;
+    height: auto;
+    max-width: 100%;
     object-fit: contain;
-    border: 0.5dvh solid var(--dark-yellow);
+    
     border-radius: 13px;
 }
 
 .mySwiper .swiper-slide-active img {
     position: relative;
+    border: 0.5dvh solid var(--dark-yellow);
 }
 
 .swiper-button-next, .swiper-button-prev {
