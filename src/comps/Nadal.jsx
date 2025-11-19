@@ -3,14 +3,15 @@ import './char.css';
 import logo from '../assets/logo_yellow.png';
 import { useNavigate } from "react-router-dom";
 import headPic1 from '../assets/header/nadal.png';
-import cabalgadaPic from '../assets/nadal/aldino.png'
+import cabalgadaPic from '../assets/nadal/cabalgada/final.png'
+
 //import headPic2 from '../assets/header/nadal2.png';
 // Import images explicitly
 
 import SwiperComponent from './Swiper';
 const Nadal = () => {
   const images = useMemo(() => {
-      const modules = import.meta.glob("../assets/magicus/*.{png,jpg}", { eager: true });
+      const modules = import.meta.glob("../assets/nadal/*.{png,jpg}", { eager: true });
       // Convert to an array of URLs and sort alphabetically
       return Object.keys(modules)
         .sort()

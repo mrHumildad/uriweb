@@ -84,6 +84,9 @@ h4 {
 p {
   font-size: var(--fs-p);
   line-height: var(--lh-p);
+  text-align: justify;
+  text-justify: inter-word;
+  text-wrap: pretty;
 }
 
 span {

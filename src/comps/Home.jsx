@@ -109,7 +109,7 @@ const Home = () => {
             </p>
             <button
               onClick={scrollToPersonajes}
-              className="scroll-button"
+              className="scroll-button desktop"
               style={{
                 background: 'none',
                 border: 'none',
